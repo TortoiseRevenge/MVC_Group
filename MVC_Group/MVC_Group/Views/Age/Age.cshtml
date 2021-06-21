@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Age";
+}
+
+<h1>How Old Are You?</h1>
+
+<div>
+
+    <form asp-action="Old" method="post">
+
+        Enter Birthday (mm/dd/yyy): <input name="inputBirthday" type="datetime"/>
+
+                                    <input name="submit" type="submit" />
+    </form>
+
+    <p>
+        @Model
+    </p>
+</div>

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "StudentName";
+}
+
+<h1>Student Name</h1>
+<div>
+    
+    <form asp-action= "FullName" method="post">
+
+        <input name="inputName1" />
+        <input name="inputName2" />
+        <input name="submit" type="submit" />
+    </form>
+
+    <p>
+        @Model
+    </p>
+</div>

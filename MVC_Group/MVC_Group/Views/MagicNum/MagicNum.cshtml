@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "MagicNum";
+}
+
+<h1>Magic Number</h1>
+
+<div>
+    <p> Enter a lower bound and an upper bound</p>
+    <form asp-action="Random" method="post">
+
+        <input name="inputNum1" />
+        <input name="inputNum2" />
+        <input name="submit" type="submit" />
+    </form>
+
+    <p>
+        @Model
+    </p>
+</div>
+

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "NameLength";
+}
+
+<h1>Name Length</h1>
+
+<div>
+
+    <form asp-action="Difference" method="post">
+
+        Enter Last Name: <input name="inputLastName" />
+        <br/>
+        Enter Age: <input name="inputNum" />
+        <br/>
+        <input name="submit" type="submit" />
+    </form>
+
+    <p>
+        @Model
+    </p>
+</div>

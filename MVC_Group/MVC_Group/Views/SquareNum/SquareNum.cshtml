@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "SquareNum";
+}
+
+<h1>Enter a Number</h1>
+<div>
+    <form asp-action="Square" method="post">
+
+        <input name="inputNum1" />
+        <input name="inputNum2" />
+        <input name="submit" type="submit" />
+    </form>
+  
+
+    
+    <p>
+        @Model
+       
+    </p>
+</div>
