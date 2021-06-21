@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div>
+    <form asp-action="RandomInt" method="post">
+        <span>Last Name: </span> <input id="Text1" type="text" name="lastName" /> <br /><br />
+        <span>Age: </span> <input id="Text1" type="text" name="age" /> <br /><br />
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        @Model
+    </p>
+</div>
